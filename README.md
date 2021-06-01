@@ -16,5 +16,10 @@ ABC company runs an ecommerce store selling books.  To fulfil this functionality
 
 ## Technical Stack
 Candidates will be judged on the basis of ability to complete the tasks listed in functional code.
-Extra credit will be given to developers who can leverage containers to allow the spin up of the functional code.
+Extra credit will be given to developers who can leverage containers to allow the spin up of the functional code on a local machine.
 Do specify the technology stack used, including language, framework, database backend etc.
+
+Judgement criteria will not be based on the asthetics and design of the UX, as the company already has a capable designer.
+
+Independent of the tech stack used, we expect the candidate to submit the code repository used retrievable over public internet, 
+ideally with instructions on how to set up and run the application.
