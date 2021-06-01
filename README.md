@@ -29,5 +29,11 @@ Submission can be done in the following manners via email to [eng-hr@withevo.com
 1. Zip copy of the git repository via any shared data medium, or
 2. Link to a publicly available git repository
 
+## Candidacy Process
+Candidates can expect the following process once submissions are received:
+1. Technical Interview to validate the techical capabilities of the candidate, this may involve pair programming, so the candidate needs to be at a PC with access to internet.
+2. Interview with Hiring Manager
+3. Interview with CEO
+
 # Disclaimer
 We will bar candidates whose submissions are suspected to have plagurized from other sources.  The works submitted must be an original work.
