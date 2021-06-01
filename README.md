@@ -1,2 +1,20 @@
-# candidate
+# Candidate
 Recruitment Test
+
+## Intent
+The intent of this test is to validate the technical capabilities of the candidate to perform simple technical tasks.
+All work should be completed within two to four hour(s).
+
+## Description
+ABC company runs an ecommerce store selling books.  To fulfil this functionality, you need to complete the following user stories:
+
+1. As a customer, I want to be able to view a list of books available for sale.
+2. As a customer, I want to be able to select the book I want, to view a detailed description of the book.
+3. As a customer, I want to be able to place an order for the book and provide delivery instructions. Note that this requirement does not require completing the payment of the book.
+4. As a shop admin, I want to view the list of the books I currently sell in the store.
+5. As a shop admin, I want to see the list of the orders placed by the customers so that I can begin to fulfil the orders.
+
+## Technical Stack
+Candidates will be judged on the basis of ability to complete the tasks listed in functional code.
+Extra credit will be given to developers who can leverage containers to allow the spin up of the functional code.
+Do specify the technology stack used, including language, framework, database backend etc.
