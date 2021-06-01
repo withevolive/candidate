@@ -23,3 +23,11 @@ Judgement criteria will not be based on the asthetics and design of the UX, as t
 
 Independent of the tech stack used, we expect the candidate to submit the code repository used retrievable over public internet, 
 ideally with instructions on how to set up and run the application.
+
+## Submission
+Submission can be done in the following manners via email to [eng-hr@withevo.com](mailto:eng-hr@withevo.com):
+1. Zip copy of the git repository via any shared data medium, or
+2. Link to a publicly available git repository
+
+# Disclaimer
+We will bar candidates whose submissions are suspected to have plagurized from other sources.  The works submitted must be an original work.
