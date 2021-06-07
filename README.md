@@ -3,7 +3,7 @@ Recruitment Test
 
 ## Intent
 The intent of this test is to validate the technical capabilities of the candidate to perform simple technical tasks.
-All work should be completed within two to four hour(s).
+All work should be completed within six to eight hour(s).
 
 ## Description
 ABC company runs an ecommerce store selling books.  To fulfil this functionality, you need to complete the following user stories:
