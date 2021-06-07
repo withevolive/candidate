@@ -20,6 +20,10 @@ Extra credit will be given to developers who can leverage containers to allow th
 Do specify the technology stack used, including language, framework, database backend etc.
 
 Judgement criteria will not be based on the asthetics and design of the UX, as the company already has a capable designer.
+A complete solution must have the following:
+1. Working code
+2. Unit Test with a rational level of coverage
+3. Design of the application
 
 Independent of the tech stack used, we expect the candidate to submit the code repository used retrievable over public internet, 
 ideally with instructions on how to set up and run the application.
