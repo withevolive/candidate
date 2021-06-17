@@ -1,0 +1,614 @@
+{
+	"info": {
+		"_postman_id": "c198ec73-ed75-4605-afd4-1eb48458e687",
+		"name": "Bookstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Book",
+					"item": [
+						{
+							"name": "Get All Books for Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjo0LCJyb2xlIjoiYWRtaW4ifQ.bYU7VUO0tiFL6xGRh11VNpbX9rBYUB6Ac_1wdoNFOMY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/v1/book/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"book",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Book for Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnBoYW1xdWFuZ3R1ZUBnbWFpbC5jb20iLCJpZCI6MSwicm9sZSI6ImFkbWluIn0.mOJ3QlknaoZ5tFuFpZYQejePE9P4VBEzW06TjCNMf7Q",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Long Van\",\n    \"price\": 5.4,\n    \"rating\": 1,\n    \"author\": \"Chau Tinh Tri\",\n    \"category\": \"novel\",\n    \"available\": 1\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/v1/book/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"book",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all books available for Customer ( or Admin)",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjo0LCJyb2xlIjoiYWRtaW4ifQ.bYU7VUO0tiFL6xGRh11VNpbX9rBYUB6Ac_1wdoNFOMY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/v1/book/available",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"book",
+										"available"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get description Book for Admin (or Customer)",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnBoYW1xdWFuZ3R1ZUBnbWFpbC5jb20iLCJpZCI6MSwicm9sZSI6ImFkbWluIn0.mOJ3QlknaoZ5tFuFpZYQejePE9P4VBEzW06TjCNMf7Q",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/v1/book/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"book",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Book for Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjo0LCJyb2xlIjoiYWRtaW4ifQ.bYU7VUO0tiFL6xGRh11VNpbX9rBYUB6Ac_1wdoNFOMY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\t\n\t\"id\": 1,\n    \"name\": \"Long Son\",\n    \"price\": 6.4,\n    \"rating\": 5,\n    \"author\": \"Hoa Da\",\n    \"category\": \"novel\",\n    \"available\": 0\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/v1/book/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"book",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Book for Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjo0LCJyb2xlIjoiYWRtaW4ifQ.bYU7VUO0tiFL6xGRh11VNpbX9rBYUB6Ac_1wdoNFOMY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/v1/book/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"book",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Login for Admin",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"email\": \"admin@gmail.com\",\n\t\"password\": \"admin@123\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/auth/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register Account for Admin",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"first_name\": \"Admin\",\n    \"last_name\": \"OS\",\n    \"email\": \"admin@gmail.com\",\n    \"password\": \"admin@123\",\n    \"role\": \"admin\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/auth/register",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Order",
+					"item": [
+						{
+							"name": "Get all Order of Customer for Admin",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjo0LCJyb2xlIjoiYWRtaW4ifQ.bYU7VUO0tiFL6xGRh11VNpbX9rBYUB6Ac_1wdoNFOMY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"Id\": 1,\n    \"address\": \"Nguyen Van Troi\",\n    \"phone\": \"0905112112\",\n    \"user_id\": 1,\n    \"User\": {\n        \"Id\": 1,\n        \"first_name\": \"Tue\",\n        \"last_name\": \"Nguyen\",\n        \"email\": \"nguyenphamquangtue@gmail.com\",\n        \"password\": \"$2a$10$MNAf/ZTtiQfqPUd00bXVKeUtWHAugl9mrqUVkT7zoekrO/lgy/Ctq\",\n        \"role\": \"admin\",\n        \"created_at\": \"2021-06-17T11:06:45.858112Z\",\n        \"updated_at\": \"2021-06-17T11:06:45.858112Z\"\n    },\n    \"books\": [\n        {\n            \"Id\": 1,\n            \"name\": \"Long Son\",\n            \"price\": 6.4,\n            \"rating\": 5,\n            \"author\": \"Hoa Da\",\n            \"category\": \"novel\",\n            \"available\": 0\n        },\n        {\n            \"Id\": 3,\n            \"name\": \"Long Son Tai Van\",\n            \"price\": 6.4,\n            \"rating\": 5,\n            \"author\": \"Hoa Da\",\n            \"category\": \"novel\",\n            \"available\": 1\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/v1/order/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"order",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Order for Admin/Customer",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjo0LCJyb2xlIjoiYWRtaW4ifQ.bYU7VUO0tiFL6xGRh11VNpbX9rBYUB6Ac_1wdoNFOMY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"address\": \"Nguyen Van Troi\",\n    \"phone\": \"0905112112\",\n    \"books\": [\n        {\n            \"Id\": 1,\n            \"name\": \"Long Son\",\n            \"price\": 6.4,\n            \"rating\": 5,\n            \"author\": \"Hoa Da\",\n            \"category\": \"novel\",\n            \"available\": 0\n        },\n        {\n            \"Id\": 3,\n            \"name\": \"Long Son Tai Van\",\n            \"price\": 6.4,\n            \"rating\": 5,\n            \"author\": \"Hoa Da\",\n            \"category\": \"novel\",\n            \"available\": 1\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/v1/order/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"order",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Login for Customer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"email\": \"tuenguyen@gmail.com\",\n\t\"password\": \"customer\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/auth/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register Account for Customer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"first_name\": \"Tue\",\n\t\"last_name\": \"Nguyen\",\n\t\"email\": \"tuenguyen@gmail.com\",\n\t\"password\": \"customer\",\n\t\"role\": \"customer\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/auth/register",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Book",
+					"item": [
+						{
+							"name": "Get all books available for Customer ( or Admin) Copy",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjo0LCJyb2xlIjoiYWRtaW4ifQ.bYU7VUO0tiFL6xGRh11VNpbX9rBYUB6Ac_1wdoNFOMY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/v1/book/available",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"book",
+										"available"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get description Book for Admin (or Customer) Copy",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnBoYW1xdWFuZ3R1ZUBnbWFpbC5jb20iLCJpZCI6MSwicm9sZSI6ImFkbWluIn0.mOJ3QlknaoZ5tFuFpZYQejePE9P4VBEzW06TjCNMf7Q",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/v1/book/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"book",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Order",
+					"item": [
+						{
+							"name": "Create Order for Admin/Customer Copy",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjo0LCJyb2xlIjoiYWRtaW4ifQ.bYU7VUO0tiFL6xGRh11VNpbX9rBYUB6Ac_1wdoNFOMY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"address\": \"Nguyen Van Troi\",\n    \"phone\": \"0905112112\",\n    \"books\": [\n        {\n            \"Id\": 1,\n            \"name\": \"Long Son\",\n            \"price\": 6.4,\n            \"rating\": 5,\n            \"author\": \"Hoa Da\",\n            \"category\": \"novel\",\n            \"available\": 0\n        },\n        {\n            \"Id\": 3,\n            \"name\": \"Long Son Tai Van\",\n            \"price\": 6.4,\n            \"rating\": 5,\n            \"author\": \"Hoa Da\",\n            \"category\": \"novel\",\n            \"available\": 1\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/v1/order/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"order",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}
